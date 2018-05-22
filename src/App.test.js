@@ -9,7 +9,7 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('fails hard', () => {
+it('should do nothing...', () => {
   expect(2).to.equal(2)
 
 })

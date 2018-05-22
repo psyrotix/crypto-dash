@@ -49,13 +49,14 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "precommit": "npm test"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.4.0",
     "chai": "^4.1.2",
-    "install": "^0.11.0",
-    "pre-commit": "^1.2.2"
+    "husky": "^0.14.3",
+    "install": "^0.11.0"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -98,6 +99,5 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "pre-commit": [ "test" ]
+  }
 }
